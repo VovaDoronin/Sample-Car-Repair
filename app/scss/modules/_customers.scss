@@ -1,0 +1,126 @@
+.banner {
+    &__bottom {
+        padding-bottom: 410px;
+
+        @include respond-to(phone-only) {
+            padding-bottom: 160px;
+        }
+    }
+    
+    &__row {
+        margin-left: 87px;
+        margin-bottom: 58px;
+
+        @include respond-to(phone-only) {
+            margin: 0 auto;
+            margin-bottom: 38px;
+        }
+    }
+
+    &__nav {
+        max-width: 846px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-alto;
+
+        @include respond-to(phone-only) {
+            max-width: calc(100% - 5px)
+        }
+
+        &-list {
+            margin-left: 20px;
+
+            @include respond-to(phone-only) {
+                margin: 0 -7px;
+            }
+        }
+    
+        &-item {
+            width: 185px;
+
+            @include respond-to(phone-only) {
+                padding: 0 7px;
+            }
+
+            &_small {
+                width: 110px;
+            }
+        }
+    
+        &-item a {
+            font-family: $font-regular, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.15px;
+            color: $color-blu;
+    
+            @include respond-to(phone-only) {
+                font-size: 13px;
+                line-height: 20px;
+            }
+    
+            &:hover {
+                font-family: $font-medium, sans-serif;
+                color: $color-milano-red;
+                padding:0 25px 15px 25px;
+                border-bottom: 4px solid $color-milano-red;
+            }
+    
+            &:active {
+                font-family: $font-medium, sans-serif;
+                color: $color-milano-red;
+                padding:0 25px 15px 25px;
+                border-bottom: 4px solid $color-milano-red;
+            }
+        }
+    }
+
+}
+
+.customers {
+    padding-bottom: 210px;
+    position: relative;
+
+    @include respond-to(phone-only) {
+        padding-bottom: 130px;
+    }
+
+    &__box {
+        margin: 0 -12px;
+        margin-top: 160px;
+
+        @include respond-to(phone-only) {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__wrap {
+        padding: 0 12px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 20px;
+        }
+
+        &_small {
+            @include respond-to(phone-only) {
+                height: 200px;
+            }
+        }
+    }
+
+    &__contant {
+        padding: 45px 44px 52px 45px;
+        background-color: $color-white;
+    }
+
+    &__desc {
+        height: 189px;
+        margin-bottom: 18px;
+    }
+
+    &__image {
+        width: 48px;
+        height: 48px;
+    }
+}

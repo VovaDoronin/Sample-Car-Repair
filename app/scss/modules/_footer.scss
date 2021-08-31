@@ -1,0 +1,27 @@
+.footer {
+    padding-top: 23.3px;
+    padding-bottom: 18.7px;
+    background-color: $color-blu;
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1080px;
+
+        @include respond-to(phone-only) {
+            text-align: center;
+            display: inline-block;
+        }
+    }
+
+    &__text a {
+        font-family: $font-regular, sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.15px;
+        color: $color-dusty-gray;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 10px;
+        }
+    }
+}

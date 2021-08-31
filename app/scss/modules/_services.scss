@@ -1,0 +1,53 @@
+.services {
+    padding-top: 110px;
+    padding-bottom: 122px;
+    position: relative;
+
+    @include respond-to(phone-only) {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    &__wrapper {
+        margin: 0 -12px;
+
+        @include respond-to(phone-only) {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 78px;
+    }
+
+    &__wrap {
+        margin-bottom: 24px;
+        padding: 0 12px;
+    }
+
+    &__inner {
+        background-color: $color-white;
+    }
+
+    &__inner:hover {
+        filter: drop-shadow(0px 16px 24px $color-drop-shadow);
+        transition: 2.5s;
+    }
+
+    &__content {
+        padding: 50px 46px 49px 43px;
+        text-align: center;
+
+        img {
+            max-width: 63px;
+        }
+    }
+
+    &__caption {
+        margin-top: 33px;
+    }
+
+    &__headline {
+        margin-bottom: 20px;
+    }
+}

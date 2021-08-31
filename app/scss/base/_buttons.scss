@@ -1,0 +1,45 @@
+.button {
+    font-family: $font-bold, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $color-white;
+    text-transform: uppercase;
+    background-color: $color-milano-red;
+    border-radius: 2px;
+    border: 1px solid $color-milano-red;
+    min-width: 211px;
+    text-align: end;
+
+    @include respond-to(phone-only) {
+        font-size: 10px;
+        line-height: 16px;
+        min-width: 50px;
+        padding-left: 2px;
+    }
+
+    &_small {
+        min-width: 145px;
+
+        @include respond-to(phone-only) {
+            min-width: 50px;
+        }
+    }
+
+    &-wrapper {
+        margin-top: 42px;
+        text-align: center;
+
+        @include respond-to(phone-only) {
+            margin-top: 16px;
+        }
+    }
+
+    &__play {
+        max-width: 140px;
+        max-height: 140px;
+        border: none;
+        background-color: transparent;
+    }
+}
+

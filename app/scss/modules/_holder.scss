@@ -1,0 +1,128 @@
+.holder {
+    background-color: $color-white;
+    position: absolute;
+    top: 98px;
+    left: 0;
+    right: 0;
+
+    @include respond-to(phone-only) {
+        top: 65px;
+        background-color: transparent;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    & input {
+        display: none;
+
+        &:checked {
+            & + label {
+                & > .holder__label-menu {
+                    display: none;
+                }
+
+                & > .holder__label-cross {
+                    display: flex;
+                }
+            }
+
+            & ~ .holder__nav {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__label {
+        display: none;
+        position: relative;
+        right: -22px;
+    
+        &-menu {
+            width: 24px;
+            height: 24px;
+        }
+    
+        &-cross {
+            width: 24px;
+            height: 24px;
+    
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    
+        @include respond-to(phone-only) {
+            display: flex;
+        }
+    }
+    
+    &__nav {
+        margin: 15px 0;
+    
+        @include respond-to(phone-only) {
+            margin: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &-list {
+            @include respond-to(phone-only) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        &-list_right {
+            flex-direction: row;
+        }
+        
+        &-list_left li {
+            margin-left: 40px;
+        
+            @include respond-to(phone-only) {
+                margin-left: 0;
+            }
+        }
+        
+        &-list_right li {
+            margin-right: 40px;
+        
+            @include respond-to(phone-only) {
+                margin-right: 11px;
+                width: 24px;
+                height: 24px;
+                
+            }
+        }
+        
+        &-item {
+            font-family: $font-bold, sans-serif;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.15px;
+            color: $color-blu;
+        
+            @include respond-to(phone-only) {
+                margin-top: 5px;
+                margin-bottom: 10px;
+                font-size: 13px;
+                line-height: 12px;
+                color: $color-white;
+            }
+        }
+        
+        &-item a {
+            color: $color-blu;
+        
+            @include respond-to(phone-only) {
+                color: $color-white;
+                filter: brightness(10);
+            }
+        }
+    }    
+}
+

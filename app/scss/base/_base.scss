@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: $color-wild-sand;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1026px;
+  margin: 0 auto;
+
+  @include respond-to(phone-only) {
+    max-width: calc(100% - 40px)
+  }
+}
+
+.logo {
+  max-width: 174px;
+
+  @include respond-to(phone-only) {
+    max-width: 120px;
+  }
+}
+
+.top-arrow {
+  width: 17px;
+  display: flex;
+}
+
+.arrow {
+  max-width: 43px;
+  vertical-align: middle;
+  margin-left: 7px;
+
+  @include respond-to(phone-only) {
+    max-width: 26px;
+    margin-left: 0;
+  }
+
+  &_big {
+    max-width: 49px;
+
+    @include respond-to(phone-only) {
+      max-width: 30px;
+    }
+  }
+
+  &__top {
+    &_left {
+      position: relative;
+      top: 3px;
+      left: 1px;
+      height: 8px;
+      width: auto;
+    }
+
+    &_right {
+      height: 14px;
+      width: auto;
+    }
+
+    &_bc-wild-sand {
+      background-color: $color-wild-sand;
+    }
+  }
+}
+
+.main {
+  position: relative;
+}
+
+.arrow-down {
+  width: 8px;
+  height: 6px;
+  margin-left: 5px;
+}
+
+.banner {
+  padding-top: 100px;
+  background-color: $color-white;
+  position: relative;
+  top: -80px;
+
+  @include respond-to(phone-only) {
+    padding-top: 50px;
+  }
+
+  &__subtitle {
+    max-width: 846px;
+    margin-left: 90px;
+    margin-bottom: 33px;
+
+    @include respond-to(phone-only) {
+      justify-content: center;
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__image {
+    max-width: 846px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -120px;
+
+    @include respond-to(phone-only) {
+      width: calc(100% - 50px);
+      margin: 0 auto;
+      margin-top: 20px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: auto;
+    }
+
+    &_bottom {
+      @include respond-to(phone-only) {
+        top: 250px;
+      }
+    }
+  }
+}
+
+.subtitle {
+  font-family: $font-bold, sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: $color-tundora;
+  margin-left: 18px;
+
+  @include respond-to(phone-only) {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+  }
+
+  &_color-alto {
+    color: $color-alto;
+  }
+}
+
+.heading {
+  font-family: $font-bolder, sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  color: $color-blu;
+  max-width: 583px;
+
+  @include respond-to(phone-only) {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &_color-white {
+    color: $color-white;
+  }
+
+  &_color-milano-red {
+    color: $color-milano-red;
+  }
+}
+
+.desc {
+  font-family: $font-regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: $color-tundora;
+
+  @include respond-to(phone-only) {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
+  &_name {
+    font-family: $font-bold, sans-serif;
+    color: $color-blu;
+    margin-left: 17px;
+  }
+
+  &_color-wild-sand {
+    color: $color-wild-sand;
+  }
+
+  &_width-149 {
+    width: 149px;
+  }
+}
+
+.column {
+  width: 324px;
+}
+
+.wrap {
+  margin-bottom: 33px;
+
+  @include respond-to(phone-only) {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+}
+
+.headline {
+  font-family: $font-bolder, sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: $color-blu;
+}

@@ -1,0 +1,39 @@
+.container {
+    height: 800px;
+    background-image: url(../assets/images/header-bc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 280px;
+    padding-bottom: 312px;
+
+    @include respond-to(phone-only) {
+        height: 570px;
+        padding-top: 280px;
+        padding-bottom: 50px;
+    }
+
+    &__button {
+        @include respond-to(phone-only) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-family: $font-bolder, sans-serif;
+        font-size: 56px;
+        line-height: 56px;
+        color: $color-white;
+        max-width: 583px;
+        margin-bottom: 48px;
+
+        @include respond-to(phone-only) {
+            font-size: 40px;
+            line-height: 40px;
+            max-width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+}

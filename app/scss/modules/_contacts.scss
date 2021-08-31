@@ -1,0 +1,126 @@
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 210px;
+    background-color: $color-blu;
+    position: relative;
+
+    @include respond-to(phone-only) {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    &__box {
+        padding: 76px 0;
+        background-color: $color-white;
+        width: 585px;
+        height: 640px;
+        text-align: center;
+        margin-right: 111px;
+        z-index: 1;
+
+        @include respond-to(phone-only) {
+            padding: 46px 0;
+            margin-right: 0;
+        }
+    }
+
+    &__contant {
+        margin: 0 auto;
+        margin-top: 48px;
+        max-width: 470px;
+
+        @include respond-to(phone-only) {
+            margin-top: 35px;
+        }
+    }
+
+    &__form {
+        @include respond-to(phone-only) {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__button {
+        margin: 0 auto;
+        margin-top: 8px;
+        max-width: 470px;
+
+        @include respond-to(phone-only) {
+            justify-content: center;
+        }
+    }
+
+    &__text {
+        margin-top: 166px;
+
+        @include respond-to(phone-only) {
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        font-family: $font-bolder, sans-serif;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: $color-white;
+        max-width: 324px;
+
+        @include respond-to(phone-only) {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+
+    &__number {
+        font-family: $font-bolder, sans-serif;
+        font-size: 96px;
+        line-height: 56px;
+        text-align: center;
+        color: $color-milano-red;
+        margin: 46px 0;
+
+        @include respond-to(phone-only) {
+            font-size: 80px;
+            line-height: 50px;
+            margin: 30px 0;
+        }
+    }
+
+    &__headline {
+        text-align: center;
+        color: $color-white;
+    }
+}
+
+.input {
+    padding: 17px 0 15px 23.5px;
+    margin-bottom: 22px;
+    max-width: 224px;
+    font-family: $font-regular, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: $color-dusty-gray;
+    background-color: $color-wild-sand;
+
+    @include respond-to(phone-only) {
+        padding: 10px 140px 10px 15px;
+        margin-bottom: 17px;
+        max-width: 320px;;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+    }
+
+    &_big {
+        padding-bottom: 147px;
+        max-width: 470px;
+
+        @include respond-to(phone-only) {
+            max-width: 320px;
+        }
+    }
+  }

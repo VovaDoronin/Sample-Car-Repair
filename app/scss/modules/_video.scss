@@ -1,0 +1,35 @@
+.video {
+    position: relative;
+
+    @include respond-to(phone-only) {
+        max-width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    
+    &__content {
+        position: absolute;
+        top: 112px;
+        right: 210px;
+
+        @include respond-to(phone-only) {
+            display: none;
+        }
+    }
+
+    &__heading {
+        color: $color-white;
+        max-width: 411px;
+
+        @include respond-to(phone-only) {
+            display: none;
+        }
+    }
+}
+
+.play {
+    width: 100%;
+
+    @include respond-to(phone-only) {
+        height: 250px;
+    }
+}

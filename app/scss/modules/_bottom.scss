@@ -1,0 +1,129 @@
+.bottom {
+    padding-top: 160px;
+    padding-bottom: 98px;
+
+    @include respond-to(phone-only) {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    &__wrap {
+        margin: 0 -50px;
+
+        @include respond-to(phone-only) {
+            justify-content: space-around;
+        }
+    }
+
+    &__inner {
+        padding: 0 50px;
+    }
+
+    &__left {
+        @include respond-to(phone-only) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__text {
+        font-family: $font-regular, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        color: $color-tundora;
+        max-width: 235px;
+        margin-top: 23px;
+        margin-bottom: 35px;
+
+        @include respond-to(phone-only) {
+            margin-top: 23px;
+            margin-bottom: 17px;
+        }
+
+        &_subtitle {
+            font-family: $font-bold, sans-serif;
+            margin-top: 11px;
+            margin-bottom: 30px;
+
+            @include respond-to(phone-only) {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+
+    &__social a {
+        max-height: 24px;
+        margin-right: 19px;
+    }
+
+    &__center {
+
+        @include respond-to(phone-only) {
+            width: 235px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__nav {
+        max-width: 356px;
+        margin: 0 -18.5px;
+
+        @include respond-to(phone-only) {
+            max-width: 300px;
+        }
+
+        &_right {
+            margin: 0;
+        }
+
+        &-item {
+            margin-bottom: 13px;
+            padding: 0 18.5px;
+    
+            a {
+                font-family: $font-bold, sans-serif;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.15px;
+                color: $color-tundora;
+            }
+    
+            &_right {
+                font-family: $font-regular, sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.15px;
+                color: $color-tundora;
+                margin-bottom: 16px;
+                padding: 0;
+    
+                a {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+    
+                img {
+                    margin-right: 21px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+    
+            &_bold {
+                font-family: $font-bold, sans-serif;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &__right {
+        max-width: 237px;
+
+        @include respond-to(phone-only) {
+            margin-left: 0;
+        }
+    }
+}

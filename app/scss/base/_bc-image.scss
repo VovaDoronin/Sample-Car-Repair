@@ -1,0 +1,42 @@
+.bc-image {
+    opacity: 0.55;
+    width: 642px;
+    position: absolute;
+
+    @include respond-to(phone-only) {
+      width: 300px;
+      opacity: 1;
+    }
+
+    &_up {
+      top: 0;
+      right: 0;
+    }
+
+    &_up-left {
+      top: 0;
+      left: 0;
+      opacity: 0.45
+    }
+
+    &_down {
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &_down-left {
+      left: 0;
+      bottom: 0;
+    }
+
+    &_bottom-78 {
+      bottom: 78px;
+    }
+
+    &_bottom-554 {
+      left: -5px;
+      bottom: 554px;
+      z-index: -1;
+    }
+  }

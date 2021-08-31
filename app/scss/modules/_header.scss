@@ -1,0 +1,40 @@
+.header {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    &__button {
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: none;
+
+        @include respond-to(phone-only) {
+            display: none;
+        }
+    }
+
+    &__text {
+        font-family: $font-regular, sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        color: $color-white;
+        margin-right: 33px;
+        margin-left: 10px;
+
+        @include respond-to(phone-only) {
+            display: none;
+        }
+
+        &_left {
+            font-family: $font-bold, sans-serif;
+        }
+
+        &_right {
+            font-family: $font-medium, sans-serif;
+        }
+    }
+}
